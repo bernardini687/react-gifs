@@ -1,23 +1,31 @@
 import React, { Component } from 'react';
 
-// class App extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <div className="left-scene"></div>
-//         <div className="right-scene"></div>
-//       </div>
-//     );
-//   }
-// }
+import SearcBar from './search_bar';
+import Gif from './gif';
 
-const App = () => {
-  return (
-    <div>
-      <div className="left-scene" />
-      <div className="right-scene" />
-    </div>
-  );
-};
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <div className="left-scene">
+          <SearcBar />
+          <div className="selected-gif">
+            <Gif />
+          </div>
+        </div>
+        <div className="right-scene"></div>
+      </div>
+    );
+  }
+}
+
+// const App = () => {
+//   return (
+//     <div>
+//       <div className="left-scene" />
+//       <div className="right-scene" />
+//     </div>
+//   );
+// };
 
 export default App;
