@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-class SearcBar extends Component {
+class SearchBar extends Component {
   handleChange = (event) => {
-    console.log(event.target.value);
+    this.props.searchFunction(event.target.value);
   }
 
   render() {
@@ -12,4 +12,4 @@ class SearcBar extends Component {
   }
 }
 
-export default SearcBar;
+export default SearchBar;
