@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import giphy from 'giphy-api';
 
 import SearcBar from './search_bar';
 import Gif from './gif';
@@ -12,6 +13,10 @@ class App extends Component {
       gifs: [],
       selectedGifId: "3o7aCYDNm1kXgSUgXm"
     };
+  }
+
+  search = (query) => {
+    giphy('BtgRxCyN0xxYN6YMFYHBkqPRygmPBhC4');
   }
 
   render() {
