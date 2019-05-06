@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component {
   handleChange = (event) => {
-    this.props.searchFunction(event.target.value);
+    this.props.searchFn(event.target.value);
   }
 
   render() {
