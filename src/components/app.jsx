@@ -11,7 +11,7 @@ class App extends Component {
 
     this.state = {
       gifs: [],
-      selectedGifId: "3o7aCYDNm1kXgSUgXm"
+      selectedGifId: '3o7aCYDNm1kXgSUgXm'
     };
   }
 
@@ -41,14 +41,5 @@ class App extends Component {
     );
   }
 }
-
-// const App = () => {
-//   return (
-//     <div>
-//       <div className="left-scene" />
-//       <div className="right-scene" />
-//     </div>
-//   );
-// };
 
 export default App;
