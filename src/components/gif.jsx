@@ -5,7 +5,8 @@ import React, { Component } from 'react';
 
 class Gif extends Component {
   shouldComponentUpdate(nextProps) {
-    return nextProps.id !== this.props.id;
+    const { id } = this.props;
+    return nextProps.id !== id;
   }
 
   handleClick = () => {
@@ -18,7 +19,6 @@ class Gif extends Component {
 
   render() {
     const { id } = this.props;
-    console.log(id);
     const src = `https://media.giphy.com/media/${id}/giphy.gif`;
 
     return (
